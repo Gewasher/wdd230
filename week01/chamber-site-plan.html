@@ -4,24 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Elton - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Gabriel Elton's course assignemnt portal for WDD 230 - Web Frontend Development">
+    <title>Gabriel Elton - WDD 230 - Web Frontend Development - Chamber Site Plan</title>
+    <meta name="description" content="Gabriel Elton's siteplan for chamber of commerce project.">
     <meta name="author" content="Gabriel Elton">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-site-plan.css">
 </head>
 
 <body>
     <header>
-
+        <img src="images/logo-placeholder.png" alt="chamber logo">
+        <h1>Siteplan</h1>
     </header>
-    <main>
 
+    <nav>
+        <ul>
+            <li>placeholder</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h2>Sitename</h2>
+            <p>The site will be named Mini-Cassia Chamber of Commerce. This name makes clear the counties covered by the
+                chamber of commerce.</p>
+        </div>
+        <div>
+            <h2>Site Purpose</h2>
+            <p>The primary goals of this site are to encourage the community to participate with the chamber of
+                commerce, keep users up to date with current events, and help users understand what the chamber of
+                commerce does.</p>
+        </div>
+        <div>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>How can I communicate with the chamber of commerce?</li>
+                <li>What can I do to support local buisnesses?</li>
+                <li>What is there to see in the area?</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Color Scheme</h2>
+            <ul>
+                <li>Light Green: to be used in the header and footer as backround.</li>
+                <li>Dark Green: to be used as borders, and in other accents</li>
+                <li>Smoky black: to be used for text in the header and footer.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Typography</h2>
+            <p>This site will use the Libre Baskerville font family.</p>
+        </div>
+        <div id="wireframe">
+            <h2>Wireframes</h2>
+            <figure>
+                <img src="images/mobile-wireframe.jpg" alt="mobile-wireframe">
+                <figcaption>Mobile Wireframre</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pc-wireframe.jpg" alt="pc-wireframe">
+                <figcaption>PC Wireframe</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; <span id="year"></span> | Gabriel Elton | Idaho</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
