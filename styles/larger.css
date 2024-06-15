@@ -1,6 +1,7 @@
 @media screen and (min-width: 750px) {
     main {
-        grid-template-columns: 2fr 1fr;
+        grid-template: auto 1fr / 1fr 1fr;
+
     }
 
     nav ul {
@@ -18,6 +19,10 @@
 
     footer p {
         display: block;
+    }
+
+    main h1 {
+        grid-column: 1/3;
     }
 
 
