@@ -18,6 +18,23 @@ header {
     margin-bottom: 0;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+
 nav {
     margin-top: 0;
     background-color: grey;
@@ -32,7 +49,7 @@ nav ul {
 
 
 nav a {
-    display: block;
+    display: none;
     color: black;
     text-align: center;
     padding: 1rem;
@@ -42,6 +59,11 @@ nav a {
 nav a:hover {
     border: 1px solid black;
 }
+
+.open a {
+    display: block;
+}
+
 
 main {
     display: grid;

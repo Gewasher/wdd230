@@ -8,6 +8,14 @@
         display: flex;
     }
 
+    #menu {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
     nav li {
         flex: 1 1 100%;
     }
