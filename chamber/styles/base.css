@@ -1,0 +1,152 @@
+body {
+    font-family: "Libre Baskerville", serif;
+
+}
+
+.dark {
+    background-color: #042a2bcb;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 800px;
+    margin: 1rem auto;
+    border: 1px solid #042a2bcb;
+    padding: 10px;
+    background-color: rgb(126, 192, 192);
+}
+
+header {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #91F5AD;
+}
+
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+
+nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #826754;
+    font-size: large;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a {
+    display: none;
+    color: #090302;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #090302;
+}
+
+.open a {
+    display: block;
+}
+
+
+
+
+main {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: rgb(126, 192, 192);
+}
+
+main img {
+    padding: 1 rem;
+    max-width: 100%;
+    border: 1px solid #042a2bcb;
+}
+
+
+
+main ul {
+    list-style-type: none;
+}
+
+main a {
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem;
+    background: white;
+    border: 1px solid #042a2bcb;
+}
+
+#spotlight {
+    background-color: #91F5AD;
+    border: 1px solid #042a2bcb;
+    margin: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+#spotlight h2 {
+    text-align: center;
+}
+
+#spotlight div {
+    background-color: white;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    display: flex;
+}
+
+#spotlight img {
+    max-width: 100%;
+    height: auto;
+}
+
+#spotlight figure {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#spotlight figcaption {
+    font-size: small;
+}
+
+#spotlight p {
+    margin: 0;
+    padding-left: .5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: smaller;
+}
