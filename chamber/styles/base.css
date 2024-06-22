@@ -16,6 +16,7 @@ footer {
     border: 1px solid #042a2bcb;
     padding: 10px;
     background-color: rgb(126, 192, 192);
+    color: #090302;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
 nav {
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #826754;
+    background-color: #b89c88;
     font-size: large;
 }
 
@@ -84,7 +85,6 @@ main {
 }
 
 main img {
-    padding: 1rem;
     max-width: 100%;
     border: 1px solid #042a2bcb;
 }
@@ -149,4 +149,8 @@ section {
 footer p {
     margin: 0;
     font-size: smaller;
+}
+
+footer a {
+    color: #090302;
 }
