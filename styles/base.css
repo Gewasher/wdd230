@@ -66,7 +66,7 @@ header {
 
 nav {
     margin-top: 0;
-    background-color: grey;
+    background-color: lightgrey;
     font-size: large;
 }
 
@@ -110,6 +110,10 @@ main ul {
 
 main a {
     text-decoration: none;
+}
+
+.dark main a {
+    color: white;
 }
 
 section {
