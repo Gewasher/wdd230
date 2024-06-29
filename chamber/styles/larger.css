@@ -4,9 +4,14 @@
 
     }
 
+    main.discover {
+        grid-template: auto 1fr / 1fr 2fr;
+    }
+
     nav ul {
         display: flex;
     }
+
 
     #menu {
         display: none;

@@ -88,6 +88,7 @@ main {
 
 main img {
     max-width: 100%;
+    height: auto;
     border: 1px solid #042a2bcb;
 }
 
@@ -99,6 +100,10 @@ main ul {
 
 main a {
     text-decoration: none;
+}
+
+.sidebar section {
+    margin: 1rem;
 }
 
 section {
@@ -115,6 +120,20 @@ section {
     padding-bottom: 0;
 
 }
+
+div.sights {
+    text-align: center;
+}
+
+.sights figure {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.sights img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 
 #spotlight h2 {
     text-align: center;

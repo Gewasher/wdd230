@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Elton - WDD 230 - Web Frontend Development - Chamber Discover Page</title>
+    <meta name="description" content="Gabriel Elton's siteplan for chamber of commerce project.">
+    <meta name="author" content="Gabriel Elton">
+
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gewasher.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPpj8nMHTTpk0W197EkSBc_k62bYcTC6jHQ&s">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Mini-Cassia Chamber Discover Page</h1>
+    </header>
+
+    <nav class="navigation">
+        <button id="menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Link</a></li>
+            <li><a href="index.html">Link</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover">
+        <div class="sidebar">
+            <section>
+                <h2>Mini-Cassi Fun</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium eius reprehenderit ad
+                    officia, nihil iure corporis quo. Magni voluptas mollitia quod doloribus ullam illo sint temporibus
+                    praesentium laudantium, minus, architecto natus! Voluptate numquam voluptatibus, omnis nisi,
+                    quisquam dicta provident animi unde consequuntur odit saepe adipisci minima repudiandae quos? Sequi!
+                </p>
+            </section>
+            <section>
+                <h2>Must See Sights</h2>
+                <ul>
+                    <li>1.</li>
+                    <li>2.</li>
+                    <li>3.</li>
+                    <li>4.</li>
+                    <li>5.</li>
+                    <li>6.</li>
+
+                </ul>
+            </section>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium eius reprehenderit ad
+                    officia, nihil iure corporis quo. Magni voluptas mollitia quod doloribus ullam illo sint temporibus
+                    praesentium laudantium, minus, architecto natus! Voluptate numquam voluptatibus, omnis nisi,
+                    quisquam dicta provident animi unde consequuntur odit saepe adipisci minima repudiandae quos? Sequi!
+                </p>
+            </section>
+            <section>
+                <h2>Vists</h2>
+                <p id="visitClock"></p>
+            </section>
+
+            <section>
+                <h2>About Our County</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate aliquam numquam iure rerum
+                    consequatur minima nobis voluptatum illo non itaque est, eos magnam eaque nulla qui dolorem neque
+                    temporibus doloremque maiores et, tempore, beatae autem earum. Ullam assumenda aliquid maiores!
+                    Perferendis incidunt, eius corrupti accusamus accusantium, vitae ipsam reiciendis aperiam dicta,
+                    cumque impedit corporis commodi velit cupiditate. Animi fugit dicta rerum sunt illum ipsam
+                    cupiditate excepturi, veniam maiores impedit molestiae eaque hic quidem deleniti autem nulla dolorum
+                    necessitatibus, architecto harum! Ex et vitae excepturi at quasi, veritatis doloremque! Et
+                    dignissimos temporibus accusamus corrupti consectetur quo eos, dolores minima odit magni nihil vel
+                    iste facere laudantium? Assumenda saepe rem itaque hic, cumque iure. Odio blanditiis voluptas porro,
+                    delectus nostrum ipsa laborum quisquam praesentium unde. Architecto?</p>
+            </section>
+        </div>
+        <div class="sights">
+
+            <figure>
+                <img src="images/city-of-rocks.webp" alt="City of Rocks" loading="lazy" width="500">
+
+                <figcaption>City of Rocks</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cleveland .webp" alt="Lake Cleveland" loading="lazy" width="500">
+                <figcaption>Lake Cleveland</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/haunted.webp" alt="Haunted Mansions" loading="lazy" width="500">
+                </picture>
+                <figcaption>Haunted Mansions of Albion</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pomerelle.webp" alt="Pomerelle" loading="lazy" width="500">
+                <figcaption>Pomerelle Sky Resort</figcaption>
+            </figure>
+            <figure>
+                <img src="images/snake-river.webp" alt="Snake River" loading="lazy" width="500">
+                <figcaption>Snake River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wilson.webp" alt="Wilson Theatre" loading="lazy" width="500">
+                <figcaption>The Wilson Theatre</figcaption>
+            </figure>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Gabriel Elton | Project for WDD230</p>
+        <a href="index.html">Contact Us!</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
