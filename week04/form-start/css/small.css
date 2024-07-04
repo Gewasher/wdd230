@@ -78,7 +78,7 @@ body {
     border-bottom: 8px solid red;
 }
 
-.wf1 input:required {
+.wf1 input:valid {
     border-bottom: 8px solid green;
 }
 

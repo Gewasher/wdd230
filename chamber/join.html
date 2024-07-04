@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Elton - WDD 230 - Web Frontend Development - Chamber of Commerce Home Page</title>
+    <meta name="description" content="Gabriel Elton's home page for chamber of commerce project.">
+    <meta name="author" content="Gabriel Elton">
+
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gewasher.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPpj8nMHTTpk0W197EkSBc_k62bYcTC6jHQ&s">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Mini-Cassia Chamber of Commerce</h1>
+    </header>
+
+    <nav class="navigation">
+        <button id="menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Link</a></li>
+            <li><a href="index.html">Link</a></li>
+        </ul>
+    </nav>
+
+    <main class="sign">
+        <section>
+            <h2>Membership Form</h2>
+            <form action="thankyou.html" method="get" class="wf1">
+                <fieldset>
+                    <legend>User Info</legend>
+                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position<input type="text" name="torp" id="torp"
+                            pattern="^[A-Za-z\- ]{7,}$"></label>
+                    <label>Phone #<input type="tel" name="tel" placeholder="1235551234" required></label>
+                    <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Buisness Info</legend>
+                    <label>Buisness Name*<input type="text" name="bname" id="bname" required></label>
+                    <label>Buisness description<textarea rows="4" name="bdes" id="bdes"></textarea></label>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Selection</legend>
+
+                    <label>Membership Options<select name="membership" id="membership">
+                            <option value="">Please Select</option>
+                            <option value="non-profit">NP</option>
+                            <option value="Bronze Membership">Bronze</option>
+                            <option value="Silver Membership">Silver</option>
+                            <option value="Gold Membership">Gold</option>
+                        </select></label>
+
+                    <label>Timestamp<input type="hidden" name="timestamp" id="timestamp"></label>
+
+                </fieldset>
+                <input type="submit" value="Confirm Membership">
+            </form>
+        </section>
+        <section>
+            <section>
+                <h2>Bronze Membership</h2>
+                <h3>Price: $20/monthly</h3>
+                <h3>Description:</h3>
+                <p>This membership comes with some good stuff.</p>
+            </section>
+
+            <section>
+                <h2>Silver Membership</h2>
+                <h3>Price: $35/monthly</h3>
+                <h3>Description:</h3>
+                <p>This membership comes with more good stuff.</p>
+            </section>
+
+            <section>
+                <h2>Gold Membership</h2>
+                <h3>Price: $50/month</h3>
+                <h3>Description:</h3>
+                <p>This membership comes with all the good stuff.</p>
+            </section>
+
+            <section>
+                <h2>Non-Profit Membership</h2>
+                <h3>Price: Free</h3>
+                <h3>Description:</h3>
+                <p>Non-Profit buisness get all of the features included with other packages, except for discounted event
+                    entry.</p>
+
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Gabriel Elton | Project for WDD230</p>
+        <a href="index.html">Contact Us!</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

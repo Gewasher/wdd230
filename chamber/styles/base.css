@@ -1,3 +1,9 @@
+:root {
+    --color1: #91F5AD;
+    --color2: #b89c88;
+    --color3: #042a2bcb;
+}
+
 body {
     font-family: "Libre Baskerville", serif;
 
@@ -78,7 +84,8 @@ nav a:hover {
 
 
 
-main {
+main.home,
+main.sign {
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -102,6 +109,77 @@ main a {
     text-decoration: none;
 }
 
+/*form*/
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--color3);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="password"],
+.wf1 textarea {
+    display: block;
+    border: 1px solid var(--color2);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 80%;
+    max-width: 400px;
+    appearance: none;
+    margin-right: 3rem;
+}
+
+.wf1 input[type="submit"] {
+    border: 1px solid var(--color2);
+    border-radius: 7px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin: -1rem 5% 2rem 5%;
+
+}
+
+#join {
+    margin: 1rem auto;
+    background: rgb(219, 219, 219);
+    padding: .5rem;
+    border: 1px solid var(--color1);
+    border-radius: 6px;
+    color: black;
+    font-size: larger;
+}
+
+.wf1 select {
+    display: block;
+    border: 1px solid var(--color2);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+#join:hover {
+    background-color: var(--color2);
+}
+
 .sidebar section {
     margin: 1rem;
 }
@@ -110,6 +188,10 @@ section {
     padding: 1rem;
     background: white;
     border: 1px solid #042a2bcb;
+}
+
+.sign section {
+    margin: .5rem;
 }
 
 #spotlight {

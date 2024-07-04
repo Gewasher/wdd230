@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Elton - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Gabriel Elton's Form for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Gabriel Elton">
+    <meta property="og:title" content="Form">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gewasher.github.io/wdd230/form.html">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPpj8nMHTTpk0W197EkSBc_k62bYcTC6jHQ&s">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Picture of Gabe">
+        <h1>WDD 230: Web Frontend Development</h1>
+        <button id="mode"> Mode</button>
+
+    </header>
+
+    <nav class="navigation">
+        <button id="menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Siteplan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset class="userInfo">
+                    <legend>User Info</legend>
+                    <label>Username<input type="text" name="text" id="username" required></label>
+                    <label>Password<input type="password" name="password" id="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                    <label>Re-enter Password<input type="password" name="password2" id="password2"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+
+                    <label>Email<input type="email" name="email" id="email" title="Please enter a valid email address"
+                            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rate Us</legend>
+                    <label for="r">Rate Our Site</label>
+                    <div id="rangeValue">1</div>
+                    <input type="range" id="r" min="1" max="10" step="1" value="1">
+                </fieldset>
+                <input type="submit" value="Create Acount">
+            </form>
+            <div id="message"></div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Gabriel Elton | Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/password.js"></script>
+
+</body>
+
+</html>

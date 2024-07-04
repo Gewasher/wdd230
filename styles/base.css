@@ -1,3 +1,7 @@
+:root {
+    --backround-color: rgb(126, 192, 192);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 
@@ -15,7 +19,7 @@ footer {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.214);
     padding: 10px;
-    background-color: rgb(126, 192, 192);
+    background-color: var(--backround-color);
 }
 
 header {
@@ -25,9 +29,10 @@ header {
 }
 
 header img {
-    max-width: auto;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     padding: 1rem;
+    display: none;
 }
 
 #mode {
@@ -100,7 +105,7 @@ nav a:hover {
 }
 
 
-main {
+main.home {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -108,9 +113,77 @@ main {
 
 main img {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     border: 1px solid #042a2bcb;
 }
+
+/*form*/
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--backround-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="password"] {
+    display: block;
+    border: 1px solid var(--backround-color);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 80%;
+    max-width: 400px;
+    appearance: none;
+    margin-right: 3rem;
+}
+
+.wf1 input[type="submit"] {
+    border: 1px solid var(--backround-color);
+    border-radius: 7px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin: -1rem 5% 2rem 5%;
+
+}
+
+fieldset.userInfo input:required {
+    border-bottom: 8px solid red;
+}
+
+fieldset.userInfo input:valid {
+    border-bottom: 8px solid green;
+}
+
+.wf1 input[type="range"] {
+    margin: 1rem;
+    padding: 0.5em;
+}
+
+#rangeValue {
+    font-size: x-large;
+}
+
+
+
+
 
 .hero {
     position: relative;
@@ -127,6 +200,7 @@ main img {
     border: 1px solid rgba(0, 0, 0, .75);
     padding: .5rem;
 }
+
 
 
 
@@ -158,7 +232,7 @@ section {
 
 iframe {
     max-width: 100%;
-    max-height: auto;
+    height: 500px;
 
 }
 
