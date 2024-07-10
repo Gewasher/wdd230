@@ -14,7 +14,5 @@ function checkSame() {
         pass1.focus();
     } else {
         message.style.display = "none";
-        kp2.style.backgroundColor = "#fff";
-        kp2.style.color = "#000";
     }
 }
