@@ -1,0 +1,13 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "11-11-2011",
+    "familySize": 1,
+    "visited": false,
+    "members": [
+        {
+            "name": "john",
+            "gende": "m",
+            "birtdate": "11-11-1911"
+        }
+    ]
+}

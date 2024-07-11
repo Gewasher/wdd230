@@ -1,0 +1,85 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/bom.html",
+                    "title": "Top 10 BOM Verses"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lasyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Local Storage"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Image"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week04/images/combinators.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "Json"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
+}

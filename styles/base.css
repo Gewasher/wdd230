@@ -111,7 +111,7 @@ main.home {
     grid-gap: 1rem;
 }
 
-main img {
+.hero img {
     max-width: 100%;
     height: auto;
     border: 1px solid #042a2bcb;
@@ -165,6 +165,14 @@ section {
 .dark section {
     background-color: black;
     color: white;
+}
+
+.info {
+    text-align: center;
+}
+
+.info div {
+    margin-bottom: 2rem;
 }
 
 iframe {
