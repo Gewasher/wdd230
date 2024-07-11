@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Rapid Rope",
+            "address": "Burley, ID 83318",
+            "phone": "+18009744703",
+            "site": "https://rapidrope.com/",
+            "image": "rapid-rope",
+            "level": "Gold"
+        },
+        {
+            "name": "High Desert Milk",
+            "address": "1033 Idaho St, Burley, ID 83318",
+            "phone": "+12088786455",
+            "site": "https://highdesertmilk.com/",
+            "image": "high-desert-milk",
+            "level": "silver"
+        },
+        {
+            "name": "Taco Bandido",
+            "address": "2301 Overland Ave, Burley, ID 83318",
+            "phone": "+12086781600",
+            "site": "https://tacobandido.com/",
+            "image": "taco-bandido",
+            "level": "Bronze"
+        },
+        {
+            "name": "Century Stadium 5",
+            "address": "464 E 5th St N, Burley, ID 83318",
+            "phone": "+12086785631",
+            "site": "http://www.burleymovies.com/",
+            "image": "century-stadium",
+            "level": "Gold"
+        },
+        {
+            "name": "Puttin' Around & Stuff",
+            "address": "560 E 5th St N, Burley, ID 83318",
+            "phone": "+12086701206",
+            "site": "https://www.puttinaroundandstuff.com/",
+            "image": "puttin",
+            "level": "Gold"
+        },
+        {
+            "name": "Southern Fabrication Works",
+            "address": "238 W 35 S, Burley, ID 83318",
+            "phone": "+12086772222",
+            "site": "https://southernfabricationworks.com/",
+            "image": "sfw",
+            "level": "Gold"
+        },
+        {
+            "name": "DoubleL",
+            "address": "307 S Warm Springs Way, Heyburn, ID 83336",
+            "phone": "+12084385592",
+            "site": "https://www.doublelglobal.com/",
+            "image": "doublel",
+            "level": "Silver"
+        }
+    ]
+}
