@@ -1,33 +1,73 @@
-const memberurl = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
-const cards = document.querySelector('#cards');
+const memberURL = 'https://gewasher.github.io/wdd230/chamber/data/members.json';
+const cards = document.querySelector('.cards');
+const select = document.querySelector('.select')
+const selectIMG = document.querySelector('.selectIMG')
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+
+let mode = 0;
+
+const displayMembers = (members) => {
+    members.forEach((member) => {
         let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let portrait = document.createElement('img');
+        let name = document.createElement('h3');
+        let picture = document.createElement('img');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let siteWrap = document.createElement('p');
+        let site = document.createElement('a');
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`
+        name.textContent = member.name;
 
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        phone.textContent = member.phone;
 
-        card.appendChild(fullName)
-        card.appendChild(portrait)
+        address.textContent = member.address;
 
+        site.textContent = member.site;
+        site.setAttribute('href', member.site)
+
+        picture.setAttribute('src', `https://gewasher.github.io/wdd230/chamber/images/${member.image}.webp`);
+        picture.setAttribute('alt', `Portrait of ${member.name} logo`);
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('width', '200');
+        picture.setAttribute('height', '150');
+
+        siteWrap.appendChild(site)
+
+        card.appendChild(picture)
+        card.appendChild(name)
+        card.appendChild(phone)
+        card.appendChild(address)
+        card.appendChild(siteWrap)
         cards.appendChild(card)
     });
 }
 
-async function getProphetData() {
-    const response = await fetch(url);
+async function getMemberData() {
+    const response = await fetch(memberURL);
 
     const data = await response.json();
-    //console.table(data.prophets);
-    displayProphets(data.prophets);
+    console.table(data.members);
+    displayMembers(data.members);
 }
 
-getProphetData();
+select.addEventListener('click', () => {
+    if (mode === 0) {
+        cards.classList.remove('grid')
+        cards.classList.add('list')
+        selectIMG.setAttribute('src', 'images/grid.png')
+        select.setAttribute('alt', 'Grid button')
+
+        mode = 1;
+    }
+    else {
+        mode = 0;
+        cards.classList.remove('list')
+        cards.classList.add('grid')
+        selectIMG.setAttribute('src', 'images/list.png')
+        select.setAttribute('alt', 'List button')
+    }
+
+});
+
+
+getMemberData();
