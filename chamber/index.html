@@ -35,12 +35,17 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">directory</a></li>
-            <li><a href="index.html">Link</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us!</a></li>
         </ul>
     </nav>
-
+    <div class="hide">
+        <h2>Come to the chamber of commerce meet and great on Wednesday at 7:00</h2>
+        <button class="x">❌</button>
+    </div>
     <main class="home">
+
+
         <img src="images/hero.jpg" alt="Hero Image">
         <section>
             <h2>Join The Chamber of Commerce!</h2>
@@ -60,57 +65,18 @@
 
         <section id="spotlight">
             <h2>Spotlights</h2>
-            <div>
-                <figure>
-                    <img src="images/logo-placeholder.png" alt="Company Logo">
-                    <figcaption><a href="index.html">Company</a></figcaption>
-                </figure>
-                <p>
-                    A breif description of a local buisness being featured.
-                </p>
 
-            </div>
-
-            <div>
-                <figure>
-                    <img src="images/logo-placeholder.png" alt="Company Logo">
-                    <figcaption><a href="index.html">Company</a></figcaption>
-                </figure>
-                <p>
-                    A breif description of a local buisness being featured.
-                </p>
-            </div>
-
-            <div>
-                <figure>
-                    <img src="images/logo-placeholder.png" alt="Company Logo">
-                    <figcaption><a href="index.html">Company</a></figcaption>
-                </figure>
-                <p>
-                    A brief description of a local buisness being featured.
-                </p>
-
-            </div>
-
-            <div>
-                <figure>
-                    <img src="images/logo-placeholder.png" alt="Company Logo">
-                    <figcaption><a href="index.html">Company</a></figcaption>
-                </figure>
-                <p>
-                    A breif description of a local buisness being featured.
-                </p>
-            </div>
 
         </section>
 
         <section>
             <h2>Weather</h2>
-            <ul>
-                <li>Current Temp:</li>
-                <li>Current Wind</li>
-                <li>Other Weather things</li>
-            </ul>
+            <div id="currentWeather">
+                <h3>Current Weather:</h3>
+            </div>
+            <div id="forecast">
+                <h3>3 Day Forecast:</h3>
+            </div>
         </section>
     </main>
     <footer>
@@ -119,8 +85,14 @@
         <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/spotlights.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/forecast.JS"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+
+
 </body>
 
 </html>

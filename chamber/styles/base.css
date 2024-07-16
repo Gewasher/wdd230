@@ -16,7 +16,8 @@ body {
 header,
 nav,
 main,
-footer {
+footer,
+.banner {
     max-width: 800px;
     margin: 1rem auto;
     border: 1px solid #042a2bcb;
@@ -81,13 +82,13 @@ nav a:hover {
     display: block;
 }
 
-
+main {
+    margin-top: 0;
+}
 
 
 main.home,
 main.sign {
-    margin-top: 0;
-    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     background-color: rgb(126, 192, 192);
@@ -226,11 +227,11 @@ div.sights {
     margin-top: .5rem;
     margin-bottom: 1rem;
     padding: .5rem;
-    display: flex;
+
 }
 
 #spotlight img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -245,8 +246,11 @@ div.sights {
 }
 
 #spotlight p {
-    margin: 0;
-    padding-left: .5rem;
+    margin: 1rem;
+}
+
+#spotlight div {
+    text-align: center;
 }
 
 footer p {
@@ -315,4 +319,29 @@ footer a {
 
 .select img:hover {
     box-shadow: 0 0 10px #333;
+}
+
+.banner {
+    background-color: #090302;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.x {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.x:hover {
+    background-color: rgba(255, 255, 255, 0.226);
 }
