@@ -8,7 +8,7 @@ async function getMemberData() {
     const response = await fetch(spotlightsURL);
 
     const data = await response.json();
-    console.table(data.members);
+
     displaySpotlight(data.members);
 }
 
@@ -16,7 +16,7 @@ async function getMemberData() {
 
 function displaySpotlight(members) {
     let spotlights = selectSpotlights(members, 3)
-    console.table(spotlights);
+
     spotlights.forEach((spotlight) => {
         let card = document.createElement('div');
         let fig = document.createElement('figure');
@@ -57,7 +57,7 @@ function selectSpotlights(members, number) {
     let sgAray = sgSplitter(members);
     while (sgAray.length > 3) {
         let selector = getRandomInt(sgAray.length)
-        console.log(selector);
+
         sgAray.splice(selector, 1)
     }
     return (sgAray)

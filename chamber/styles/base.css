@@ -55,7 +55,7 @@ header {
 nav {
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #b89c88;
+    background-color: #ebc7ad;
     font-size: large;
 }
 
@@ -76,6 +76,10 @@ nav a {
 
 nav a:hover {
     border: 1px solid #090302;
+}
+
+nav a.current {
+    background-color: #b89c88;
 }
 
 .open a {
@@ -213,9 +217,7 @@ div.sights {
     margin-top: 1rem;
 }
 
-.sights img:hover {
-    box-shadow: 0 0 50px #333;
-}
+
 
 
 #spotlight h2 {
@@ -336,10 +338,12 @@ footer a {
 
 .x {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0px;
+    top: 0px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
+    height: 44px;
+    width: 44px;
 }
 
 .x:hover {
