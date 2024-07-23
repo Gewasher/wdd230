@@ -1,6 +1,6 @@
 
 let pathArray = location.pathname.split("/");
-let currentPage = `${pathArray[2]}`
+let currentPage = `${pathArray[3]}`
 let linksArray = document.querySelectorAll('a')
 
 
